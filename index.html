@@ -6,7 +6,6 @@
 <!-- Mirrored from www.missingpieceinvites.com/demos/meenaya by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Apr 2026 07:15:57 GMT -->
 
 <head>
-
   
   <!-- slider images -->
   <style>
@@ -64,7 +63,7 @@ img[src*="4moRDGJdHuGozf1nEo8Y2t4pdw"] {
   <meta property="og:type" content="website">
   <meta property="og:title" content="Wedding Invitation - Karthik & Viashu">
   <meta property="og:description"
-    content="Create a beautiful wedding invite that opens as a website. Edit anytime and share instantly on WhatsApp. Modern, simple, and made for every ceremony.">
+    content="Come join our wedding celebration!">
   <meta property="og:image" content="#featureimage">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -6224,6 +6223,31 @@ function startMusic() {
 // works for mobile + desktop
 document.addEventListener("click", startMusic);
 document.addEventListener("touchstart", startMusic);
+</script>
+
+
+<!-- meta data title -->
+
+<script>
+window.addEventListener("load", () => {
+
+  document.title = "Wedding Invitation - Karthik & Vaishu";
+
+  const setMeta = (property, value) => {
+    let tag = document.querySelector(`meta[property="${property}"]`);
+    if (!tag) {
+      tag = document.createElement("meta");
+      tag.setAttribute("property", property);
+      document.head.appendChild(tag);
+    }
+    tag.setAttribute("content", value);
+  };
+
+  setMeta("og:title", "WWedding Invitation - Karthik & Vaishu");
+  setMeta("og:description", "Come join our wedding celebration!");
+  setMeta("og:image", "images/1-img.jpg");
+
+});
 </script>
   
   
